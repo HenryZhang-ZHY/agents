@@ -21,8 +21,8 @@ description: Writing in clear and concise language to present reasoned thinking 
 1. Create an outline to organize the KEY ELEMENTS, follow the standard defined in [three-level-note-taking](../three-level-note-taking/SKILL.md).
 2. Write the content based on the outline.
 3. Review the content
-  3.1 If the outline can be improved, go back to step 1.
-  3.2 If the content can be improved, go back to step 2.
+    1. If the outline can be improved, go back to step 1.
+    2. If the content can be improved, go back to step 2.
 4. Finalize the content if the content is good enough.
 
 ### Note

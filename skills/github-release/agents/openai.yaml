@@ -1,0 +1,7 @@
+interface:
+  display_name: "GitHub Release"
+  short_description: "Publish verified GitHub releases with the gh CLI"
+  default_prompt: "Use $github-release to publish the requested version as a verified GitHub release."
+
+policy:
+  allow_implicit_invocation: false

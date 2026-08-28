@@ -1,6 +1,7 @@
 ---
 name: coding
 description: "Guide LLM Agents to code using the user's preferred workflow: clarify the problem, define the goal, use TDD with small iterations, and commit atomic units of work."
+license: MIT
 ---
 
 # Coding

@@ -1,6 +1,7 @@
 ---
 name: three-level-note-taking
 description: Distilling information into three levels of notes. Use when taking notes on a given text.
+license: MIT
 ---
 
 # Three-Level Note-Taking

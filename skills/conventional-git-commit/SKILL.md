@@ -1,6 +1,7 @@
 ---
 name: conventional-git-commit
 description: Create git commits and draft, review, rewrite, or choose commit messages that follow Conventional Commits 1.0.0. Use this skill whenever the user asks to commit changes, says "commit this", wants a commit message, asks whether a change is feat/fix/chore/refactor/etc., mentions breaking changes, changelogs, semantic versioning, release notes, squash commits, or wants staged changes summarized for git history. For exact specification wording and edge cases, consult references/conventional-commits-1.0.0.md.
+license: MIT
 ---
 
 # Conventional Git Commit

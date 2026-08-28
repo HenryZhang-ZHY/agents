@@ -1,6 +1,7 @@
 ---
 name: epistemic-writing
 description: Writing in clear and concise language to present reasoned thinking and genuine, concrete emotions.
+license: MIT
 ---
 
 # Epistemic Writing

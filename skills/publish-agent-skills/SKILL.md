@@ -1,6 +1,7 @@
 ---
 name: publish-agent-skills
 description: "Validate and publish Agent Skills from a GitHub repository using gh skill publish. Use only when a human explicitly invokes $publish-agent-skills and asks to publish one or more skills."
+license: MIT
 ---
 
 # Publish Agent Skills

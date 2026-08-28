@@ -1,13 +1,13 @@
 ---
 name: conventional-git-commit
-description: Create git commits and draft, review, rewrite, or choose commit messages that follow Conventional Commits 1.0.0-beta.4. Use this skill whenever the user asks to commit changes, says "commit this", wants a commit message, asks whether a change is feat/fix/chore/refactor/etc., mentions breaking changes, changelogs, semantic versioning, release notes, squash commits, or wants staged changes summarized for git history. For exact specification wording and edge cases, consult references/conventional-commits-1.0.0-beta.4.md.
+description: Create git commits and draft, review, rewrite, or choose commit messages that follow Conventional Commits 1.0.0. Use this skill whenever the user asks to commit changes, says "commit this", wants a commit message, asks whether a change is feat/fix/chore/refactor/etc., mentions breaking changes, changelogs, semantic versioning, release notes, squash commits, or wants staged changes summarized for git history. For exact specification wording and edge cases, consult references/conventional-commits-1.0.0.md.
 ---
 
 # Conventional Git Commit
 
 Use this skill to make commit history explicit and machine-readable. The message should communicate the intent of the change, support changelog generation, and map naturally to semantic versioning when `feat`, `fix`, or `BREAKING CHANGE` is used.
 
-For exact wording, examples, and edge cases from the source specification, read [references/conventional-commits-1.0.0-beta.4.md](references/conventional-commits-1.0.0-beta.4.md). Use the reference when the user asks about compliance details, SemVer implications, breaking changes, or ambiguous commit types.
+For exact wording, examples, and edge cases from the source specification, read [references/conventional-commits-1.0.0.md](references/conventional-commits-1.0.0.md). Use the reference when the user asks about compliance details, SemVer implications, breaking changes, or ambiguous commit types.
 
 ## Commit message format
 
@@ -50,15 +50,17 @@ Choose the most specific type that describes the primary intent of the commit:
 
 ## Breaking changes
 
-Use `BREAKING CHANGE: <description>` when the commit introduces a breaking API or user-facing compatibility change.
+Use `!` in the type/scope prefix, a `BREAKING CHANGE: <description>` footer, or both when the commit introduces a breaking API or user-facing compatibility change.
 
-- Put `BREAKING CHANGE:` at the beginning of the body or at the beginning of a footer line.
+- Put `!` immediately before the colon, such as `feat(api)!: change the response format`.
+- When using a footer, put `BREAKING CHANGE: <description>` in the footer section.
 - Keep `BREAKING CHANGE` uppercase exactly.
-- You may add `!` before the colon in the subject, such as `chore!: drop Node 6`, but the message still needs a `BREAKING CHANGE:` body or footer.
+- If `!` is present, the `BREAKING CHANGE:` footer may be omitted and the subject description describes the breaking change.
 
 ## Footer and trailer handling
 
-- Keep each footer as one piece of metadata per line.
+- Start each footer with a token followed by `: ` or ` #`; replace whitespace in tokens with `-`, except that `BREAKING CHANGE` is also valid.
+- Footer values may span multiple lines and end when the next valid footer token begins.
 - Preserve required trailers such as `Co-authored-by`.
 - If there is both a body and footers, separate them with one blank line.
 - If there is no body, place footers one blank line after the subject.

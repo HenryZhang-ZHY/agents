@@ -1,0 +1,7 @@
+interface:
+  display_name: "Publish Agent Skills"
+  short_description: "Validate and publish Agent Skills with the GitHub CLI"
+  default_prompt: "Use $publish-agent-skills to validate and publish the requested Agent Skills version."
+
+policy:
+  allow_implicit_invocation: false
